@@ -1,0 +1,22 @@
+<!-- Default form contact -->
+<form class="text-center border border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+    <p class="h4 mb-4">Fill out this form to register your turn</p>
+  
+    <!-- Name -->
+    <input type="text" formControlName="first_name" id="defaultContactFormName" mdbInput
+      class="form-control mb-4" placeholder="Name">
+  
+    <!-- Email -->
+    <input type="text" formControlName="last_name" id="defaultContactFormEmail" mdbInput
+      class="form-control mb-4" placeholder="Last Name">
+
+    <input type="text" formControlName="phone" id="defaultContactFormEmail" mdbInput
+      class="form-control mb-4" placeholder="PhoneNumber">
+  
+    <!-- Send button -->
+    <button mdbBtn color="info" outline="true" block="true" class="z-depth-0 my-4 waves-effect"
+      mdbWavesEffect type="submit" [disabled]="disabledSubmitButton">Send</button>
+  
+  </form>
+  <!-- Default form contact -->
